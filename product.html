@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>产品经历 · 宸的空间站</title>
+  <meta name="description" content="产品经理的思考实验室 · Space for ideas, projects, and footprints">
+  <link rel="icon" href="assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',   // neon purple
+            cosmic: '#0b1020',    // deep space
+            accent: '#22d3ee'     // cyan
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .starfield {
+      background: radial-gradient(ellipse at top, rgba(34,211,238,0.06), transparent 60%),
+                  radial-gradient(ellipse at bottom, rgba(124,58,237,0.08), transparent 60%),
+                  #0b1020;
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen starfield text-white">
+  <header class="sticky top-0 z-50 glass border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="宸的空间站" class="w-8 h-8">
+        <span class="font-semibold">宸的空间站</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-1"><a href="index.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">首页</a>
+<a href="resume.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">简历</a>
+<a href="projects.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">项目经历</a>
+<a href="product.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-accent underline underline-offset-4">产品经历</a>
+<a href="blog.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">有趣的思考</a>
+<a href="travel.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">出行轨迹</a>
+<a href="hobbies.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">兴趣爱好</a>
+<a href="connect.html" class="px-3 py-2 rounded-xl hover:bg-white/10 transition text-white/80">互动区</a></nav>
+      <button aria-label="Open Menu" id="menuBtn" class="md:hidden p-2 rounded-xl hover:bg-white/10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden px-4 pb-3"><a href="index.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">首页</a><a href="resume.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">简历</a><a href="projects.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">项目经历</a><a href="product.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">产品经历</a><a href="blog.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">有趣的思考</a><a href="travel.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">出行轨迹</a><a href="hobbies.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">兴趣爱好</a><a href="connect.html" class="block px-3 py-2 rounded-xl hover:bg-white/10">互动区</a></div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pt-12 pb-24">
+    <section class="max-w-6xl mx-auto px-4 py-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <!-- 校友运动小程序 -->
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold text-white mb-2">校友运动小程序 + 后台</h3>
+    <p class="text-gray-400 text-sm mb-4">运动闭环 · 活动分销 · 敏捷团队</p>
+    <a href="project-detail-alumni-sport.html" 
+       class="inline-block px-4 py-2 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition">
+      查看详情
+    </a>
+  </div>
+
+  <!-- 校园 E物 -->
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold text-white mb-2">校园 E物</h3>
+    <p class="text-gray-400 text-sm mb-4">二手交易 · 闭环设计 · 商业模式</p>
+    <a href="project-detail-campus-thing.html" 
+       class="inline-block px-4 py-2 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition">
+      查看详情
+    </a>
+  </div>
+
+  <!-- 换宿系统 -->
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold text-white mb-2">华中师范大学 换宿系统</h3>
+    <p class="text-gray-400 text-sm mb-4">换宿审批 · 效率提升 · 数据驱动</p>
+    <a href="project-detail-dorm.html" 
+       class="inline-block px-4 py-2 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition">
+      查看详情
+    </a>
+  </div>
+
+  <!-- 招新系统 -->
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold text-white mb-2">华中师范大学 招新系统</h3>
+    <p class="text-gray-400 text-sm mb-4">流程闭环 · 界面优化 · 招新提效</p>
+    <a href="project-detail-recruit.html" 
+       class="inline-block px-4 py-2 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition">
+      查看详情
+    </a>
+  </div>
+
+  <!-- 知音华夏 -->
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold text-white mb-2">知音华夏</h3>
+    <p class="text-gray-400 text-sm mb-4">3D建模 · 文化IP · 获奖项目</p>
+    <a href="project-detail-zhiyin.html" 
+       class="inline-block px-4 py-2 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition">
+      查看详情
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="mt-24 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+      <p>© 2025 宸的空间站 · All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-accent">GitHub</a>
+        <a href="#" class="hover:text-accent">LinkedIn</a>
+        <a href="#" class="hover:text-accent">Twitter</a>
+        <a href="#" class="hover:text-accent">公众号</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('mobileNav');
+    if (btn && mobile) {{
+      btn.addEventListener('click', () => mobile.classList.toggle('hidden'));
+    }}
+  </script>
+</body>
+</html>
